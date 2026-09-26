@@ -5,13 +5,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-
 # Указываем адреса, которым разрешено делать запросы к бэкенду
-origins = [
-    "https://onrender.com",  # URL вашего будущего JS-фронтенда на Render
-    "http://localhost:3000",                 # Локальный фронтенд для тестов
-]
-
+# origins = [
+#     "https://onrender.com",  # URL вашего будущего JS-фронтенда на Render
+#     "http://localhost:3000",                 # Локальный фронтенд для тестов
+# ]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], # Можно указать ["*"] для открытия API всему миру
