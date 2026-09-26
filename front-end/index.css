@@ -1,4 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .introduce{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.income-balance-expenses{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+
 }
