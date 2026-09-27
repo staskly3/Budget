@@ -18,11 +18,13 @@
     </div>
 
     <div class="incomeAndStuff">  <!-- это указать расходы, доходы, и балик -->
-        <label for="addTranzaktion"> Добавить транзакцию </label>
-        <select id="addTranzaktion">
+        <div class="tranzaktionAdd">
+            <label for="addTranzaktion"> Добавить транзакцию </label>
+            <select id="addTranzaktion">
             <option class="income">Доход</option><!-- это список для выбора между доходом и расходом -->
             <option class="expenses">Расход</option>
         </select>
+        </div>
 
         <div class="pickCategory">
         <label for="category"> Выберите категорию <br> </label>
@@ -40,7 +42,11 @@
             <label for="sumInput"> Введите сумму </label>
             <input id="sumInput" type="number">    <!-- это ввод суммы -->
         </div>
-        <button id="addBtn"> Добавить </button>
+
+        <div class="btnContainer">
+            <button id="addBtn"> Добавить </button> <!-- это контейнер для кнопки чтоб передвинуть ее -->
+        </div>
+
     </div>
 
         
